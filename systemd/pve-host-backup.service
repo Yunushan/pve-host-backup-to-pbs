@@ -1,0 +1,9 @@
+[Unit]
+Description=PVE Host Backup to PBS
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/pve-host-backup.sh
+LoadCredentialEncrypted=proxmox-backup-client.password:/etc/pve-host-backup/pbs-token.cred
