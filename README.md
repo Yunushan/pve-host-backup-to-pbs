@@ -200,4 +200,4 @@ understand cluster implications.
 - Never commit real repository strings or tokens
 
 ## License
-MIT (see `LICENSE`)
+0BSD (see `LICENSE`)
